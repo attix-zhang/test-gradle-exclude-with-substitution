@@ -17,6 +17,7 @@ com.google.guava:guava:20.0 (selected by rule)
 
       Requested attributes not found in the selected variant:
          org.gradle.dependency.bundling = external
+         org.gradle.jvm.environment     = standard-jvm
          org.gradle.jvm.version         = 8
    ]
 
@@ -26,10 +27,6 @@ com.jcraft:jsch:0.1.42 -> com.google.guava:guava:20.0
 
 A web-based, searchable dependency report is available by adding the --scan option.
 
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
-Use '--warning-mode all' to show the individual deprecation warnings.
-See https://docs.gradle.org/6.8.1/userguide/command_line_interface.html#sec:command_line_warnings
+BUILD SUCCESSFUL in 1s
 
-BUILD SUCCESSFUL in 535ms
-1 actionable task: 1 executed
 ```
