@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+        substitute module("com.jcraft:jsch") using module("com.google.guava:guava:20.0") because "No reason, just for test"
+    }
+    exclude group: "com.google.guava", module: "guava"
+}
+
+dependencies {
+    compile group: 'org.apache.hadoop', name: 'hadoop-common', version: '2.6.0'
+}
+
